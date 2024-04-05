@@ -4,17 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>카카오브레인 Blog</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!--순서중요, reset먼저-->
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/header.css" />
   </head>
   <body>
     <!-- 전체 레이아웃 -->
     <div class="wrap">
       <!-- 상단 레이아웃 -->
       <header class="header">
-        <!-- 상단 로고 -->
-        <div class="header-logo"></div>
-        <!-- 상단 메뉴 -->
-        <div class="header-navi"></div>
+        <div class="inner">
+          <!-- 상단 로고 -->
+          <div class="header-logo">
+            <a href="index.html" class="header-logo-link">
+              <img
+                src="./images/etc/logo-kakao.png"
+                alt="카카오브레인 블로그"
+                class="header-logo-img"
+              />
+              <!-- start 로고 슬라이드 -->
+              <div class="header-logo-slide" id="logo-slide">
+                <img
+                  src="./images/etc/logo-blog01.png"
+                  alt="카카오브레인 블로그"
+                />
+              </div>
+              <!-- end 로고 슬라이드 -->
+            </a>
+          </div>
+
+          <!-- 상단 메뉴 -->
+          <nav class="header-navi">
+            <ul class="navi-list">
+              <li><a href="#">소식</a></li>
+              <li><a href="#">팀&크루</a></li>
+              <li><a href="#">영입</a></li>
+              <li class="navi-search">
+                <a href="#">
+                  <img src="./images/icon/icon-search.png" alt="검색" />
+                </a>
+              </li>
+              <li class="mobile-menu">
+                <a href="#">
+                  <img src="./images/icon/icon-hbr.png" alt="모바일메뉴" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
+
       <!-- 메인 레이아웃 -->
       <main class="main">
         <!-- 메인 상단 -->
@@ -43,21 +83,20 @@
         </div>
       </main>
       <!-- 하단 레이아웃 -->
-      /
       <footer class="footer">
         <!-- 하단 사이트 정보 및 사이트 맵 -->
         <div class="footer-top">
-            <!-- 회사소개 -->
-            <div class="footer-top-info"></div>
-            <!-- 사이트맵-->
-            <div class="footer-top-sitemap"></div>
+          <!-- 회사소개 -->
+          <div class="footer-top-info"></div>
+          <!-- 사이트맵 -->
+          <div class="footer-top-sitemap"></div>
         </div>
         <!-- 하단 카피라이터 및 SNS 링크 -->
         <div class="footer-bottom">
-            <!-- 카피라이터 -->
-            <div class="footer-bottom-copyright"></div>
-            <!-- SNS 목록 -->
-            <div class="footer-bottom-sns"></div>
+          <!-- 카피라이터 -->
+          <div class="footer-bottom-copyright"></div>
+          <!-- SNS 목록 -->
+          <div class="footer-bottom-sns"></div>
         </div>
       </footer>
     </div>
