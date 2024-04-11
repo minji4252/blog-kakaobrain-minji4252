@@ -1,0 +1,33 @@
+.footer {
+}
+.footer .inner {
+}
+.footer-top {
+  background: #1e1e1e;
+  height: 300px;
+  padding: 30px 0;
+}
+.footer-top-info {
+}
+.footer-top-sitemap {
+}
+
+@media all and (max-width: 1024px) {
+}
+
+.footer-bottom {
+  background: #191919;
+  height: 100px;
+}
+.footer-bottom-copyright {
+}
+
+.footer-bottom-copyright p {
+  font-size: 14px;
+  color: #666;
+}
+.footer-bottom-sns {
+}
+
+@media all and (max-width: 1024px) {
+}

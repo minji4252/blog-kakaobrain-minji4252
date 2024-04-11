@@ -8,7 +8,13 @@
   /* 옵션 */
   /* outline-style: none; */
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
 html {
+  /* 가로로 스크롤 안생기게 */
+  overflow-x: hidden;
 }
 body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
@@ -19,5 +25,30 @@ body {
 .br-20 {
   border-radius: 20px;
 }
+
+.bt-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 버튼 추가 예비용 */
+  gap: 3px;
+  margin-bottom: 60px;
+}
+.bt-more {
+  display: block;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 11px 20px;
+  line-height: 20px;
+  transition: all 0.1s;
+}
+
+.bt-more:hover {
+  background: #000;
+  color: #fff;
+}
+
 .wrap {
 }
