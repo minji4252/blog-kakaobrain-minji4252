@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -25,15 +31,42 @@
             <a href="index.html" class="header-logo-link">
               <img
                 src="./images/etc/logo-kakao.png"
-                alt="카카오브레인 블로그"
+                alt="카카오 브레인"
                 class="header-logo-img"
               />
               <!-- start 로고 슬라이드 -->
               <div class="header-logo-slide" id="logo-slide">
-                <img
-                  src="./images/etc/logo-blog01.png"
-                  alt="카카오브레인 블로그"
-                />
+                <div class="swiper swlogo">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog01.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog02.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog03.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog04.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog05.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog06.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog07.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog08.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog09.png" alt="블로그" />
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- end 로고 슬라이드 -->
             </a>
@@ -342,3 +375,6 @@
     </div>
   </body>
 </html>
+<!-- 외부 js 파일 방식 으로 진행 -->
+<script src="./js/logo.js"></script>
+<!-- 끝에 두어야만 swlogo를 찾을 수 있음 -->
