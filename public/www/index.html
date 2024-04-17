@@ -14,11 +14,20 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <!-- Swiper -->
+    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 외부 js 파일 방식으로 진행 -->
+    <script src="./js/logo.js"></script>
+    <!-- <head>부분에 있다면 script문서를 불러와 swlogo 찾으라고 하는데
+  이당시에는 타이핑 순서상 body부분이 없기때문에 swlogo를 찾을 수 없다. 
+    window load 기능을 사용해야 위로 끌어올 수 있음 -->
+    <script src="./js/topslide.js"></script>
+    <script src="./js/bannerslide.js"></script>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -96,18 +105,46 @@
           <div class="main-top">
             <!-- 슬라이드 -->
             <div class="main-top-slide br-20">
-              <a href="#">
-                <p class="slide-title">
-                  카카오브레인의<br />
-                  연구문화
-                </p>
-              </a>
+              <!-- Start 상단 슬라이드 -->
+              <div class="swiper topslide">
+                <div class="swiper-wrapper">
+                  <!-- 외부 데이터 연동  -->
+                  <!-- <div class="swiper-slide">
+                    <a href="#">
+                      <p class="slide-title">
+                        카카오브레인의<br />
+                        연구문화
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <p class="slide-title">
+                        카카오브레인의<br />
+                        연구문화
+                      </p>
+                    </a>
+                  </div> -->
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- End 상단 슬라이드 -->
             </div>
             <!-- 타이틀 배너 슬라이드 -->
             <div class="main-top-banner br-20">
-              <a href="#">
-                <p class="slide-title">영입 중</p>
-              </a>
+              <!-- Start 타이틀 배너 -->
+              <div class="swiper bannerslide">
+                <div class="swiper-wrapper">
+                  <!-- 외부 데이터 연동 -->
+                  <!-- <div class="swiper-slide">
+                    <a href="#">
+                      <p class="slide-title">영입 중</p>
+                    </a>
+                  </div> -->
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- End 타이틀 배너 -->
             </div>
           </div>
           <!-- 메인 하단 -->
