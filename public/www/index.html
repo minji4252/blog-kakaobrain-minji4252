@@ -22,12 +22,15 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 외부 js 파일 방식으로 진행 -->
+    <script src="./js/header.js"></script>
     <script src="./js/logo.js"></script>
     <!-- <head>부분에 있다면 script문서를 불러와 swlogo 찾으라고 하는데
   이당시에는 타이핑 순서상 body부분이 없기때문에 swlogo를 찾을 수 없다. 
     window load 기능을 사용해야 위로 끌어올 수 있음 -->
     <script src="./js/topslide.js"></script>
     <script src="./js/bannerslide.js"></script>
+    <script src="./js/news.js"></script>
+    <script src="./js/crew.js"></script>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -154,54 +157,8 @@
               <!-- 새글 리스트 -->
               <div class="main-bottom-list-news">
                 <h2>NEW. 따끈따끈 새로 나온 글 🔥</h2>
-                <div class="list-wrap">
-                  <a href="#" class="list-box">
-                    <div
-                      class="list-box-img br-20"
-                      style="
-                        background: url('./images/c1.jpg') no-repeat center;
-                        background-size: cover;
-                      "
-                    ></div>
-                    <div class="list-box-cate">
-                      <img src="./images/icon/ic_krew.png" alt="카카오브레인" />
-                      <span>Krew</span>
-                    </div>
-                    <p class="list-box-title">
-                      규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
-                    </p>
-                    <span class="list-box-day">2024.02.08</span>
-                  </a>
-
-                  <a href="#" class="list-box">
-                    <div
-                      class="list-box-img br-20"
-                      style="
-                        background: url('./images/c2.png') no-repeat center;
-                        background-size: cover;
-                      "
-                    ></div>
-                    <div class="list-box-cate">
-                      <img src="./images/icon/ic_krew.png" alt="카카오브레인" />
-                      <span>Krew</span>
-                    </div>
-                    <p class="list-box-title">
-                      규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
-                    </p>
-                    <span class="list-box-day">2024.02.08</span>
-                  </a>
-
-                  <a href="#" class="list-box">
-                    <div class="list-box-img br-20"></div>
-                    <div class="list-box-cate">
-                      <img src="./images/icon/ic_krew.png" alt="카카오브레인" />
-                      <span>Krew</span>
-                    </div>
-                    <p class="list-box-title">
-                      규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
-                    </p>
-                    <span class="list-box-day">2024.02.08</span>
-                  </a>
+                <div class="list-wrap" id="news">
+                  <!-- 데이터 연동 -->
                 </div>
               </div>
               <!-- 배너 -->
@@ -211,8 +168,9 @@
               <!-- 추천글 리스트 -->
               <div class="main-bottom-list-picks">
                 <h2>Editor’s Pick 🏃🏻‍♀️🏃‍♂️🏃🏽</h2>
-                <div class="list-wrap">
-                  <a href="#" class="list-box">
+                <div class="list-wrap" id="crew">
+                  <!-- 데이터 연동 -->
+                  <!-- <a href="#" class="list-box">
                     <div
                       class="list-box-img br-20"
                       style="
@@ -313,7 +271,7 @@
                       규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
                     </p>
                     <span class="list-box-day">2024.02.08</span>
-                  </a>
+                  </a> -->
                 </div>
                 <div class="bt-wrap">
                   <a href="#" class="bt-more">더보기</a>

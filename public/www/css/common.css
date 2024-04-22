@@ -51,4 +51,8 @@ body {
 }
 
 .wrap {
+  /* 좌표의 기준설정 */
+  position: relative;
+  /* header를 고정시켜서 */
+  padding-top: 70px;
 }
