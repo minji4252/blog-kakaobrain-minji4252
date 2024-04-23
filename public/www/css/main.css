@@ -235,6 +235,16 @@
 .main-bottom-list-picks {
 }
 
+.cardslide {
+  width: 100%;
+  height: 100%;
+  overflow: visible !important;
+}
+
+.cardslide .swiper-wrapper {
+  display: block;
+}
+
 /* 반응형 */
 @media all and (max-width: 1024px) {
   .main-bottom {
@@ -257,10 +267,6 @@
     /* 760 / 1024 * 100 */
     height: 74.21vw;
     max-height: 760px;
-  }
-  .main-bottom-cards {
-    width: 100%;
-    max-width: 100%;
   }
 }
 
@@ -317,12 +323,16 @@
 /* 반응형 */
 @media all and (max-width: 1024px) {
   .main-bottom-cards {
-    width: 100%;
-    max-width: 100%;
+    width: 1024px;
+    max-width: 1024px;
   }
 
   .card-link {
     width: 240px;
     height: 266px;
+  }
+
+  .cardslide .swiper-wrapper {
+    display: flex;
   }
 }
