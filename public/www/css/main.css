@@ -26,25 +26,20 @@
   width: 100%;
   height: 100%;
 }
-
-/* 슬라이드 아래에 ... 점들 */
-
 .topslide .swiper-pagination {
   bottom: 30px !important;
 }
-
 .topslide .swiper-pagination-bullet {
   width: 4px !important;
   height: 4px !important;
-  background: #fff !important;
+  background: #ffffff !important;
   opacity: 0.7 !important;
   border-radius: 4px !important;
-  transition: width 0.3s;
+  transition: width 0.3;
   margin: 0 2px !important;
 }
-
 .topslide .swiper-pagination-bullet-active {
-  background: #fff !important;
+  background: #ffffff !important;
   opacity: 1 !important;
   width: 20px !important;
 }
@@ -70,34 +65,27 @@
 
   overflow: hidden;
 }
-
-/* 슬라이드 아래에 점 */
-
 .bannerslide {
   width: 100%;
   height: 100%;
 }
-
 .bannerslide .swiper-pagination {
   bottom: 30px !important;
 }
-
 .bannerslide .swiper-pagination-bullet {
   width: 4px !important;
   height: 4px !important;
-  background: #fff !important;
+  background: #ffffff !important;
   opacity: 0.7 !important;
   border-radius: 4px !important;
-  transition: width 0.3s;
+  transition: width 0.3;
   margin: 0 2px !important;
 }
-
 .bannerslide .swiper-pagination-bullet-active {
-  background: #fff !important;
+  background: #ffffff !important;
   opacity: 1 !important;
   width: 20px !important;
 }
-
 .main-top-banner a {
   /* a 태그는 display: inline; 이므로  block 지정 */
   display: flex;
@@ -165,7 +153,6 @@
 
 .list-box:hover .list-box-img {
   transform: translateY(-10px);
-  /* 원본페이지에서 긁어옴 */
   filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.2));
 }
 
@@ -240,11 +227,9 @@
   height: 100%;
   overflow: visible !important;
 }
-
 .cardslide .swiper-wrapper {
   display: block;
 }
-
 /* 반응형 */
 @media all and (max-width: 1024px) {
   .main-bottom {
@@ -287,6 +272,7 @@
   /* 배치된 내용의 좌표(x,y)가 이동한다 */
   transition: all 0.2s ease-in;
   overflow: hidden;
+  /* overflow hidden으로 그림자가 잘리면 div를 만들어 다른곳에 적용한다. */
 }
 
 .card-link:hover {
@@ -319,19 +305,16 @@
   border-radius: 10px;
   margin-left: 3px;
 }
-
 /* 반응형 */
 @media all and (max-width: 1024px) {
   .main-bottom-cards {
     width: 1024px;
     max-width: 1024px;
   }
-
   .card-link {
     width: 240px;
     height: 266px;
   }
-
   .cardslide .swiper-wrapper {
     display: flex;
   }
