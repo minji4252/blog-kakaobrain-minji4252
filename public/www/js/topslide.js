@@ -34,8 +34,9 @@ window.addEventListener("load", function () {
       const whereTag = document.querySelector(".topslide .swiper-wrapper");
       whereTag.innerHTML = slideTags;
 
+      // 3. html 완성 후 swiper를 생성한다.
       //기본 코드를 넣어보자.
-      var topSlide = new Swiper(".topslide", {
+      const topSlide = new Swiper(".topslide", {
         loop: true,
         speed: 800,
         autoplay: {
@@ -46,6 +47,17 @@ window.addEventListener("load", function () {
           el: ".swiper-pagination",
           clickable: true,
         },
+      });
+
+      // 4. 마우스 오버시 슬라이드를 일시 멈춤 및 재실행
+      // pagination도 마우스오버에 포함해야하므로 .topslide만 지정
+      const slideArea = document.querySelector(".topslide");
+
+      slideArea.addEventListener("mouseenter", function () {
+        topSlide.autoplay.stop();
+      });
+      slideArea.addEventListener("mouseleave", function () {
+        topSlide.autoplay.start();
       });
     })
     .catch((error) => {

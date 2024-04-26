@@ -4,13 +4,13 @@
 * {
   margin: 0px;
   padding: 0px;
+  /* 옵션 - 대학교,정부,관공서에서는 사용 금지*/
+  outline-style: none;
   box-sizing: border-box;
-  /* 옵션 */
-  /* outline-style: none; */
 }
 a {
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
 }
 html {
   /* 가로로 스크롤 안생기게 */
@@ -18,9 +18,9 @@ html {
 }
 body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 .br-20 {
   border-radius: 20px;
@@ -28,21 +28,21 @@ body {
 
 .bt-wrap {
   display: flex;
-  justify-content: center;
-  align-items: center;
   /* 버튼 추가 예비용 */
   gap: 3px;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 60px;
 }
 .bt-more {
   display: block;
+  padding: 11px 20px;
   border: 1px solid #000;
-  border-radius: 20px;
   font-size: 14px;
   font-weight: 700;
-  padding: 11px 20px;
   line-height: 20px;
   transition: all 0.1s;
+  border-radius: 20px;
 }
 
 .bt-more:hover {
@@ -55,4 +55,13 @@ body {
   position: relative;
   /* header를 고정시켜서 */
   padding-top: 70px;
+}
+
+.inner {
+  width: calc(100% - 30px);
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
 }

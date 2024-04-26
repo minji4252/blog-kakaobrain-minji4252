@@ -10,8 +10,11 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/popup.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/maintop.css" />
+    <link rel="stylesheet" href="./css/mainbottom.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <!-- Swiper -->
     <!-- Link Swiper's CSS -->
@@ -22,6 +25,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 외부 js 파일 방식으로 진행 -->
+    <script src="./js/popup.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/logo.js"></script>
     <!-- <head>부분에 있다면 script문서를 불러와 swlogo 찾으라고 하는데
@@ -34,6 +38,23 @@
     <script src="./js/cards.js"></script>
   </head>
   <body>
+    <!-- 저작권 안내 -->
+    <div class="popup">
+      <div class="popup-content">
+        <p>
+          <strong
+            >해당 사이트는 스터디용으로 제작되었으며, 모든 리소스의 저작권은
+            원저작자에게 있습니다.</strong
+          >
+          <br />
+          * 본 사이트는 Chrome 에 최적화되어 있습니다. <br />
+          * 해당 사이트와 관련한 문제가 있으면 alswl1364@naver.com 로 연락
+          부탁드리겠습니다.
+        </p>
+        <button class="popup-close">창닫기</button>
+      </div>
+    </div>
+
     <!-- 전체 레이아웃 -->
     <div class="wrap">
       <!-- 상단 레이아웃 -->
