@@ -11,14 +11,14 @@ window.addEventListener("load", function () {
     // const total = _result.length;
     // for (let i = 0; i < total; i++) {
     //   const obj = _result[i];
-    //   const tag = `<a href=${obj.link} class="list-box">
-    //       <div class="list-box-img br-20" style="background: url('./images/${obj.imgpath}') no-repeat center; background-size: cover"></div>
-    //       <div class="list-box-cate">
+    //   const tag = `<a href=${obj.link} className="list-box">
+    //       <div className="list-box-img br-20" style="background: url('./images/${obj.imgpath}') no-repeat center; background-size: cover"></div>
+    //       <div className="list-box-cate">
     //         <img src="./images/icon/${obj.icon}" alt="${obj.category}" />
     //         <span style="color:${obj.txtcolor};">${obj.category}</span>
     //       </div>
-    //       <p class="list-box-title">${obj.title}</p>
-    //       <span class="list-box-day">${obj.day}</span>
+    //       <p className="list-box-title">${obj.title}</p>
+    //       <span className="list-box-day">${obj.day}</span>
     //       </a>`;
     //   allTag = allTag + tag;
     // }

@@ -1,0 +1,6 @@
+.main {
+}
+.main .inner {
+  height: auto;
+  display: block;
+}

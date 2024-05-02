@@ -1,0 +1,139 @@
+.footer {
+}
+.footer .inner {
+  height: auto;
+}
+.footer-top {
+  padding: 30px 0;
+  background: #1e1e1e;
+}
+.footer-top-info {
+}
+.footer-logo {
+  width: 121px;
+  height: 20px;
+  display: block;
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  width: 100%;
+  height: auto;
+}
+.footer-top-info-desc {
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #999;
+}
+
+.bt-orange {
+  display: inline-block;
+  border: 1px solid #fec62c !important;
+  background: #fec62c !important;
+  color: #1e1e1e !important;
+}
+
+.footer-top-sitemap {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-top-sitemap dl {
+  width: 50%;
+}
+
+.footer-top-sitemap dl dt {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer-top-sitemap dl dd {
+  margin-bottom: 30px;
+}
+
+.footer-top-sitemap dl dd a {
+  display: inline-block;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  /* 줄내림 못하게 */
+  white-space: nowrap;
+}
+
+.footer-top-sitemap dl dd a:hover {
+  /* block이라서 공백영역에 마우스를 두어도 
+  영역으로 인식하고 언더라인이 그어진다 */
+  /* display: inline-block; 하면 됨 */
+  text-decoration: underline;
+}
+
+.rot-45 {
+  font-weight: 900;
+  /* 45도 회전 */
+  transform: rotate(45deg);
+}
+
+/* 반응형 */
+@media all and (max-width: 1024px) {
+  .footer .inner {
+    /* 줄내림 */
+    flex-wrap: wrap;
+  }
+  .footer-top-info {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer-top-sitemap {
+    width: 100%;
+  }
+}
+
+.footer-bottom {
+  padding: 30px 0;
+  background: #191919;
+}
+.footer-bottom-copyright {
+}
+
+.copy {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-bottom-sns {
+}
+
+.sns-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.sns-list li {
+}
+
+.sns-list li a {
+  font-size: 24px;
+  color: #807f80;
+}
+
+.sns-list li a:hover {
+  color: #ccc;
+}
+
+/* 반응형 */
+@media all and (max-width: 1024px) {
+  /* 왜 flex-wrap: wrap 안하나요?
+  위에 반응형에 이미 했습니다 */
+  .footer-bottom-copyright {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom-sns {
+    width: 100%;
+  }
+}

@@ -1,0 +1,195 @@
+.main-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.main-bottom h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.list-wrap {
+  display: flex;
+  gap: 2.56%;
+  justify-content: space-between;
+  /* display: flex default값 */
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.list-box {
+  width: 30%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.list-box:hover .list-box-img {
+  transform: translateY(-10px);
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.2));
+}
+
+.list-box-img {
+  width: 100%;
+  height: 17.09vw;
+  max-height: 200px;
+
+  margin-bottom: 24px;
+  overflow: hidden;
+
+  transition: all 0.2s ease-in;
+}
+.list-box-cate {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.list-box-cate img {
+  width: 24px;
+  height: 24px;
+}
+.list-box-cate span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e700a7;
+}
+
+.list-box-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000;
+  word-break: keep-all;
+}
+
+.list-box-day {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.main-bottom-list {
+  width: 71.79%;
+  max-width: 840px;
+}
+
+.main-bottom-list-news {
+}
+
+.main-bottom-list-banner {
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+.list-banner-link {
+  width: 100%;
+  height: 160px;
+  /* a태그는 너비높이주기어려우므로 block */
+  display: block;
+
+  background: #031efb url("../images/1pc.png") no-repeat center;
+  background-size: 100%;
+}
+
+.main-bottom-list-picks {
+}
+
+.cardslide {
+  width: 100%;
+  height: 100%;
+  overflow: visible !important;
+}
+.cardslide .swiper-wrapper {
+  display: block;
+}
+/* 반응형 */
+@media all and (max-width: 1024px) {
+  .main-bottom {
+    /* 적용되어있음 */
+    /* display: flex;
+      justify-content: space-between; */
+
+    /* .main-bottom-list width가 100% 이므로 맨밑으로 내려감(줄내림) */
+    flex-wrap: wrap;
+  }
+  .main-bottom-list {
+    width: 100%;
+    max-width: 100%;
+  }
+  .list-box {
+    width: 100%;
+  }
+  .list-box-img {
+    /* 세로높이 반응형 */
+    /* 760 / 1024 * 100 */
+    height: 74.21vw;
+    max-height: 760px;
+  }
+}
+
+.main-bottom-cards {
+  width: 25.64%;
+  max-width: 300px;
+}
+
+.card-link {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background: url("../images/p1.png") no-repeat center;
+  background-size: cover;
+  /* 배치된 내용의 좌표(x,y)가 이동한다 */
+  transition: all 0.2s ease-in;
+  /* overflow hidden으로 그림자가 잘리면 div를 만들어 다른곳에 적용한다. */
+}
+
+.card-link:hover {
+  /* 배치된 내용의 좌표(x,y)가 이동한다 */
+  transform: translateY(-10px);
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.2));
+}
+
+.card-txt {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.card-title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.card-count {
+  display: block;
+  margin-left: 3px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 10px;
+}
+/* 반응형 */
+@media all and (max-width: 1024px) {
+  .main-bottom-cards {
+    width: 1024px;
+    max-width: 1024px;
+  }
+  .card-link {
+    width: 240px;
+    height: 266px;
+  }
+  .cardslide .swiper-wrapper {
+    display: flex;
+  }
+}
