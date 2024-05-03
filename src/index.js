@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
-    {/* <Popup></Popup> */}
+    <Popup></Popup>
     <div className="wrap">
       <Header></Header>
       <MbHeader></MbHeader>

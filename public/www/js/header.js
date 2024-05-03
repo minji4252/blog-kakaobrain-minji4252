@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
   const header = document.querySelector(".header");
 
   // 함수안은 수정안해도 되도록 개선
-  const headerActivClass = "line-active"; // 변경되는 css 클래스명
+  const headerActiveClass = "line-active"; // 변경되는 css 클래스명
   // 클래스(line-active)가 적용되는 최소 높이값
   const headerActiveValue = 0;
 
@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
    * 스크롤바의 위치에 따라서 css 적용함수
    * _html : 대상 html 태그 > header
    * _tgY : css 가 적용될 위치 값 > headerActiveValue
-   * _avtive : 적용할 css 클래스명 > headerActivClass
+   * _avtive : 적용할 css 클래스명 > headerActiveClass
    * _scY : 스크롤바의 위치 > window.scrollY
    */
   function showLine(_html, _tgY, _active, _scY) {
@@ -31,11 +31,11 @@ window.addEventListener("load", function () {
     }
   }
 
-  showLine(header, headerActiveValue, headerActivClass, window.scrollY);
+  showLine(header, headerActiveValue, headerActiveClass, window.scrollY);
 
   // 스크롤을 할때마다 함수(showLine) 실행
   window.addEventListener("scroll", function () {
-    showLine(header, headerActiveValue, headerActivClass, window.scrollY);
+    showLine(header, headerActiveValue, headerActiveClass, window.scrollY);
   });
 });
 
