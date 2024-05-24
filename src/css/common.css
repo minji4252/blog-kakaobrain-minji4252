@@ -4,16 +4,16 @@
 * {
   margin: 0px;
   padding: 0px;
-  /* 옵션 - 대학교,정부,관공서에서는 사용 금지*/
+  /* 옵션 */
   outline-style: none;
   box-sizing: border-box;
 }
 a {
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
+
 html {
-  /* 가로로 스크롤 안생기게 */
   overflow-x: hidden;
 }
 body {
@@ -22,13 +22,14 @@ body {
   font-weight: 400;
   font-optical-sizing: auto;
 }
+
 .br-20 {
   border-radius: 20px;
 }
 
 .bt-wrap {
+  width: 100%;
   display: flex;
-  /* 버튼 추가 예비용 */
   gap: 3px;
   align-items: center;
   justify-content: center;
@@ -37,23 +38,20 @@ body {
 .bt-more {
   display: block;
   padding: 11px 20px;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
   transition: all 0.1s;
   border-radius: 20px;
 }
-
 .bt-more:hover {
-  background: #000;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
 }
 
 .wrap {
-  /* 좌표의 기준설정 */
   position: relative;
-  /* header를 고정시켜서 */
   padding-top: 70px;
 }
 

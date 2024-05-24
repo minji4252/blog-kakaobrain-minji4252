@@ -10,38 +10,31 @@
   z-index: 999999999;
   background: rgba(0, 0, 0, 0.7);
 }
-
 .popup-content {
   position: relative;
   width: 60%;
   padding: 50px;
-  background: #fff;
+  background: #ffffff;
   line-height: 20px;
   border-radius: 10px;
 }
-
 .popup-content strong {
   display: block;
   margin-bottom: 5px;
   font-weight: 700;
 }
-
 .popup-close {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 20px;
-  width: 100px;
-  height: 35px;
   padding: 5px;
-  border: 2px solid #888888;
-  background: lightgoldenrodyellow;
-  font-weight: 800;
-  color: #444444;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #fff;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .popup-close:hover {
-  background: black;
-  color: #fff;
+  background: #f668b5;
+  color: #ffffff;
 }
