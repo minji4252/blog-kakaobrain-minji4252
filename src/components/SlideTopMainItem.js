@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 const SlideTopMainItem = ({ url, pic, title }) => {
   const styleObj = {
@@ -11,14 +13,12 @@ const SlideTopMainItem = ({ url, pic, title }) => {
   }, []);
 
   return (
-    <div className="swiper-slide">
-      <a href={url} style={styleObj}>
-        <p
-          className="slide-title"
-          dangerouslySetInnerHTML={{ __html: title }}
-        ></p>
-      </a>
-    </div>
+    <a href={url} style={styleObj}>
+      <p
+        className="slide-title"
+        dangerouslySetInnerHTML={{ __html: title }}
+      ></p>
+    </a>
   );
 };
 

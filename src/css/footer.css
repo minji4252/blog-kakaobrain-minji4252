@@ -29,7 +29,7 @@
 }
 
 .bt-orange {
-  display: inline-block;
+  display: inline-block !important;
   border: 1px solid #fec62c !important;
   background: #fec62c !important;
   color: #1e1e1e !important;

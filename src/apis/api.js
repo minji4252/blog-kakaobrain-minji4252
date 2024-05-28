@@ -14,7 +14,7 @@ export const getBanner = async () => {
     }
   } catch (error) {
     console.log(error);
-    alert(error);
+    alert(alert);
   }
 };
 
@@ -29,7 +29,7 @@ export const getCards = async () => {
     }
   } catch (error) {
     console.log(error);
-    alert(error);
+    alert(alert);
   }
 };
 
@@ -44,7 +44,7 @@ export const getCrew = async () => {
     }
   } catch (error) {
     console.log(error);
-    alert(error);
+    alert(alert);
   }
 };
 
@@ -59,7 +59,7 @@ export const getNews = async () => {
     }
   } catch (error) {
     console.log(error);
-    alert(error);
+    alert(alert);
   }
 };
 
@@ -74,6 +74,6 @@ export const getTopSlide = async () => {
     }
   } catch (error) {
     console.log(error);
-    alert(error);
+    alert(alert);
   }
 };

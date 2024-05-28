@@ -13,18 +13,18 @@ const MainBottomList = () => {
     const result = await getNews();
     setNewsList(result);
   };
+  useEffect(() => {
+    getNewsCall();
+    return () => {};
+  }, []);
 
   const getCrewCall = async () => {
     const result = await getCrew();
     setCrewList(result);
   };
-
-  useEffect(() => {
-    getNewsCall();
-  }, []);
-
   useEffect(() => {
     getCrewCall();
+    return () => {};
   }, []);
 
   return (

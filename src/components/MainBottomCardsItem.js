@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 const MainBottomCardsItem = ({ link, imgpath, cardname, cardno }) => {
   const styleCard = {
@@ -10,14 +12,12 @@ const MainBottomCardsItem = ({ link, imgpath, cardname, cardno }) => {
     return () => {};
   }, []);
   return (
-    <div className="swiper-slide">
-      <a href={link} className="card-link br-20" style={styleCard}>
-        <div className="card-txt">
-          <h3 className="card-title">{cardname}</h3>
-          <span className="card-count">{cardno}</span>
-        </div>
-      </a>
-    </div>
+    <a href={link} className="card-link br-20" style={styleCard}>
+      <div className="card-txt">
+        <h3 className="card-title">{cardname}</h3>
+        <span className="card-count">{cardno}</span>
+      </div>
+    </a>
   );
 };
 
