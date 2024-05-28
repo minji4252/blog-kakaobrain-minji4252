@@ -1,2 +1,2 @@
 // 서버 주소
-export const SERVER_URL = "/";
+export const SERVER_URL = "";
