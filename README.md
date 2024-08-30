@@ -3,7 +3,7 @@
 ![카카오브레인](https://github.com/user-attachments/assets/33da7392-b832-401f-b54a-ba9a71bc8b99)
 
  ## 배포주소
-<a href="https://vercel.com/kimminjis-projects/blog-kakaobrain-minji4252" target="_blank">https://vercel.com/kimminjis-projects/blog-kakaobrain-minji4252
+<a href="https://blog-kakaobrain-minji4252.vercel.app/" target="_blank">https://blog-kakaobrain-minji4252.vercel.app/
 </a>
 
 
