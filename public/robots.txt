@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://blog-kakaobrain-minji4252.vercel.app
+
+# Sitemaps
+Sitemap: https://blog-kakaobrain-minji4252.vercel.app/sitemap.xml
